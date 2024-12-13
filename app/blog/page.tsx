@@ -1,4 +1,9 @@
 import Image from "next/image";
+import Logo1 from "@/Public/Logo1.svg"
+import Icon from "@/Public/icon.svg"
+import Blog from "@/Public/blog.svg"
+import Blog2 from "@/Public/blog2.svg"
+import Blog3 from "@/Public/blog3.svg"
 
 export default function Home() {
   const posts = [
@@ -39,7 +44,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center w-full h-full absolute top-0 left-0">
         <Image
-            src="/logo1.svg"
+            src={Logo1}
             alt="logo"
             height={32}
             width={50}
@@ -50,7 +55,7 @@ export default function Home() {
             <h2 className="font-medium text-[#000000] flex items-center">
               Home
               <span className="ml-2">
-                <Image src="/icon.svg" alt="icon" height={8} width={14} />
+                <Image src={Icon} alt="icon" height={8} width={14} />
               </span>
             </h2>
             <p className="font-light text-[#000000] ml-2">blog</p>
@@ -63,7 +68,7 @@ export default function Home() {
         {/* Blog Section */}
         <div className="flex flex-col gap-6 lg:w-2/3">
           <Image
-            src="/blog.svg"
+            src={Blog}
             alt="Blog Post"
             className="rounded-lg w-full h-[500px] object-cover"
           />
@@ -113,7 +118,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col gap-6 lg:w-2/3 mt-8">
           <Image
-            src="/blog2.svg"
+            src={Blog2}
             alt="Blog Post"
             className="rounded-lg w-full h-[500px] object-cover"
           />
@@ -140,7 +145,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-6 lg:w-2/3 mt-8">
           <Image
-            src="/blog3.svg"
+            src={Blog3}
             alt="Blog Post"
             className="rounded-lg w-full h-[500px] object-cover"
           />
